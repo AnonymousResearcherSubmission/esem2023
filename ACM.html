@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Extract Method Research</title>
+    <style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+		}
+		th {
+			background-color: #ddd;
+			font-weight: bold;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<table id="csvTable">
+		<thead>
+			<tr>
+				<th>Row</th>
+                <th>Authors</th>
+				<th>Title</th>
+				<th>Publication Year</th>
+				<th>URLs</th>
+                <th>Abstract</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<script>
+		// Read the CSV file using XMLHttpRequest
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === 4 && xhr.status === 200) {
+				// Split the CSV into an array of lines
+				var lines = xhr.responseText.split('\n');
+				// Loop over each line and split it into an array of values
+				for (var i = 0; i < lines.length; i++) {
+					var values = parseCSVLine(lines[i]);
+					// Create a new row in the table
+					var row = document.createElement('tr');
+
+                    //add row number to each cell in first column of table
+                    var cell = document.createElement('td');
+					cell.textContent = i + 1;
+					row.appendChild(cell);
+
+					// Loop over each value and create a new cell in the row
+					for (var j = 0; j < values.length; j++) {
+						var cell = document.createElement('td');
+						cell.textContent = values[j];
+						row.appendChild(cell);
+					}
+					// Add the row to the table body
+					document.querySelector('#csvTable tbody').appendChild(row);
+				}
+			}
+		};
+		xhr.open('GET', 'ACM.csv', true);
+		xhr.send();
+
+		// Helper function to parse a line of CSV data
+		function parseCSVLine(line) {
+			var values = [];
+			var inQuotes = false;
+			var start = 0;
+			for (var i = 0; i < line.length; i++) {
+				if (line[i] === '"') {
+					inQuotes = !inQuotes;
+				} else if (line[i] === ',' && !inQuotes) {
+					values.push(line.substring(start, i).trim());
+					start = i + 1;
+				}
+			}
+			values.push(line.substring(start).trim());
+			return values;
+		}
+	</script>
+</body>
+</html>

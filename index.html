@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115826132-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-gtag('config', 'UA-115826132-1');
+  gtag('config', 'UA-180076082-1');
 </script>
-
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Code Review Open Platform</title>
+      <title>Extract Method Refactoring</title>
       <link rel="stylesheet" href="css/components.css">
       <link rel="stylesheet" href="css/icons.css">
       <link rel="stylesheet" href="css/responsee.css">
@@ -36,15 +34,15 @@ gtag('config', 'UA-115826132-1');
                   <p class="nav-text">Menu</p>
                   <ul class="right">
                         <li><a class="home">Home</a></li>
-                        <li><a class="about">About</a></li>
-                        <li><a class="download">Download</a></li>
-                        <li><a class="details">Details</a></li>
-                        <li><a class="protection">Data Protection</a></li>
-                        <li><a class="support">Support</a></li>
-                        <li><a class="contribute">Join</a></li>
-                        <li><a class="cite">Cite</a></li>
-                        <li><a class="publications">Publications</a></li>
-                        <li><a class="contact">Contact</a></li>
+                        <li><a class="about">Experiment</a></li>
+                        <!--<li><a class="download">Download</a></li>-->
+                        <li><a class="details">Dataset</a></li>
+                        <!--<li><a class="protection">Data Protection</a></li>-->
+                        <!--<li><a class="support">Support</a></li>-->
+                        <!--<li><a class="contribute">Join</a></li>-->
+                        <!--<li><a class="cite">Cite</a></li>-->
+                        <!--<li><a class="publications">Publications</a></li>-->
+                        <!--<li><a class="contact">Contact</a></li>-->
                   </ul>
                </div>
             </div>
@@ -59,15 +57,15 @@ gtag('config', 'UA-115826132-1');
                   <div class="aside-nav">
                      <ul>
                         <li><a class="home">Home</a></li>
-                        <li><a class="about">About</a></li>
-                        <li><a class="download">Download</a></li>
-                        <li><a class="details">Dataset Details</a></li>
-                        <li><a class="protection">Data Protection</a></li>
-                        <li><a class="support">Support</a></li>
-                        <li><a class="contribute">Join the CROP</a></li>
-                        <li><a class="cite">Cite CROP</a></li>
-                        <li><a class="publications">Publications</a></li>
-                        <li><a class="contact">Contact</a></li>
+                        <li><a class="about">Experiment</a></li>
+                        <!--<li><a class="download">Download</a></li>-->
+                        <li><a class="details">Dataset</a></li>
+                        <!--<li><a class="protection">Data Protection</a></li>-->
+                        <!--<li><a class="support">Support</a></li>-->
+                        <!--<li><a class="contribute">Join the CROP</a></li>-->
+                        <!--<li><a class="cite">Cite CROP</a></li>-->
+                        <!--<li><a class="publications">Publications</a></li>-->
+                        <!--<li><a class="contact">Contact</a></li>-->
                         <!--<li>-->
                            <!--<a>Product</a>-->
                            <!--<ul>-->
@@ -97,19 +95,23 @@ gtag('config', 'UA-115826132-1');
 
                <div id="home">
                <section class="s-12 l-6">
-                  <h2>Welcome</h2>
+                  <h2>Extract Method Refactoring: A Systematic Mapping Study
+</h2>
+                  
                   <p>
-                     This website is for the Code Review Open Platform (CROP).
-                  </p><br>
-                  <p>
-                     CROP is an open source dataset of code review data intended for supporting software engineering researchers and practitioners.
-                     For each software system in CROP, we link code review data to complete versions of the system's code base at the time of review.
-                     CROP currently provides data for <b>11 software systems</b>, accounting for a total of <b>50,959 code reviews</b> and <b>144,906 revisions</b>.
-                  </p><br>
-                  <p>
-                     Here you can find useful information, such as how to <a href="#download" class="download">download the dataset</a>, 
-                     <a href="#support" class="support">find support</a> and <a href="#details" class="details">understand the dataset.</a>
-                  </p><br>
+                     <b>Background:</b> Code refactoring is widely recognized as an essential software engineering practice to improve the understandability and maintainability of source code. The Extract Method refactoring is considered as the Swiss army knife of refactorings as developers often apply it to improve their code quality, e.g., decompose long code fragments, reduce code complexity, eliminate duplicated code, etc. In recent years, several studies attempted to recommend Extract Method refactorings allowing to collect, analyze and reveal actionable data-driven insights about refactoring practices within software projects.<br>
+
+<b>Aim:</b> Extract method is considered as one of the most popular refactoring, but difficult refactoring to apply in practice as it involves low-level code changes such as statements, variables, parameters, return types, etc. Hence, researchers and practitioners begin to be aware of the state-of-the-art and identify new research opportunities in this context. Among the various refactoring approaches presented in the literature, we aim to identify the Extract Method refactoring recommendation techniques. <br>
+
+<b>Method:</b> We review the body of knowledge related to Extract Method refactoring in the form of a systematic literature mapping (SLM). After compiling an initial pool of 406 papers, we conducted a systematic selection, and our final pool included 56 technical papers. We define two sets of research questions and systematically develop and refine a classification schema based on several criteria including their methodology, applicability as well as their degree of automation. <br>
+
+<b>Results:</b> The results construct a catalog of 56 Extract Method approaches indicating that several techniques have been proposed in the literature. Our results show that: (i) rule-based approaches are more popular than others; and (ii) providing the context in which Extract Method is being performed is paramount to guide developers on how to use the refactoring tools. <br>
+
+<b>Conclusions:</b> Our study serves as an index to the body of knowledge in this area for researchers and practitioners in determining the Extract Method refactoring approach that is most appropriate for their needs. Our findings also empower the community with information to guide future refactoring tool development.
+                  </p><br><br>
+                <p>We drive our study using the following research questions:<br>
+<b>RQ1:</b> What approaches were considered by the PSs to recommend Extract Method refactoring? 
+<b>RQ2:</b> What are the main characteristics of Extract Method recommendation tools?</p>
                </section>
                </div>
 
@@ -128,7 +130,7 @@ gtag('config', 'UA-115826132-1');
                      CROP collects code review information from open source software systems and links this data to complete versions of the code base for each of 
                      these systems.
                   </p><br>
-                  <p>
+                  <p>.
                      Given a certain software system, CROP contains code review data and versions of the code base for each revision ever submitted for review, including
                      intermediary revisions before merging and revisions that were even abandoned by the system's developers. Each version of the system represents a complete
                      snapshot of the system's code base, in a way that each revision of the system is fully buildable, compilable and testable.
@@ -169,13 +171,7 @@ gtag('config', 'UA-115826132-1');
                <section class="s-12 l-6">
                   <h3>Data Currently in CROP</h3>
                   <p>
-                     At the present moment, CROP contains data from two open source communities: <a href="https://www.eclipse.org/" target=_blank">Eclipse</a>
-                     and <a href="https://www.couchbase.com/" target=_blank">Couchbase</a>. For each of these communities, we provide the data for the 4 most popular
-                     projects in terms of the number of code reviews performed.
-                  </p><br>
-                  <p>
-                     The following table reports statistics concerning the data collected for each of these 8 systems, where the Eclipse projects are presented in the upper 
-                     section of the table and the Couchbase projects in the lower section.
+                     Data Collection: <a href="" target="_blank">ScienceDirect</a>, <a href="" target="_blank">Scopus</a>, <a href="" target="_blank">Springer Link</a>, <a href="" target="_blank">Web of Science</a>, <a href="ACM.html">ACM Digital Library</a>, and <a href="" target="_blank">IEEE Xplore</a>.
                   </p><br>
                   <style type="text/css">
                      .tg  {border-collapse:collapse;border-spacing:0;}
@@ -482,10 +478,10 @@ gtag('config', 'UA-115826132-1');
       <div class="line">
         <footer class="box">           
               <div class="s-12 l-6">
-                 <p>Code Review Open Platform, 2020</p>
+                 <p>Extract Method Refactoring, 2023</p>
               </div>
               <div class="s-12 l-6">
-                 <a class="right" href="https://mhepaixao.github.io/homepage/" target="_blank">Matheus Paixao</a>
+                 <!--<a class="right" href="https://mhepaixao.github.io/homepage/" target="_blank">Anonym</a>-->
               </div>
            </div>
         </footer>
@@ -493,5 +489,7 @@ gtag('config', 'UA-115826132-1');
       <script type="text/javascript" src="js/responsee.js"></script>
       <script type="text/javascript" src="js/navigation.js"></script>
       <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
    </body>
 </html>
