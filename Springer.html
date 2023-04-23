@@ -28,11 +28,11 @@
 		<thead>
 			<tr>
 				<th>Row</th>
-                <th>Authors</th>
-				<th>Title</th>
+                <th>Item Title</th>
+                <th>Item DOI</th>
+				<th>Authors</th>
 				<th>Publication Year</th>
-				<th>URLs</th>
-                <th>Abstract</th>
+				<th>URL</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -68,7 +68,7 @@
 				}
 			}
 		};
-		xhr.open('GET', './ACM.csv', true);
+		xhr.open('GET', 'Springer.csv', true);
 		xhr.send();
 
 		// Helper function to parse a line of CSV data

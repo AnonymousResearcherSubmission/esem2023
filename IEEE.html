@@ -28,11 +28,12 @@
 		<thead>
 			<tr>
 				<th>Row</th>
-                <th>Authors</th>
-				<th>Title</th>
+                <th>Document Title</th>
+				<th>Authors</th>
+				<th>Publication Title</th>
 				<th>Publication Year</th>
-				<th>URLs</th>
-                <th>Abstract</th>
+				<th>Abstract</th>
+				<th>PDF Link</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -68,7 +69,7 @@
 				}
 			}
 		};
-		xhr.open('GET', './ACM.csv', true);
+		xhr.open('GET', 'Extract_Method_SLR_-_IEEE.csv', true);
 		xhr.send();
 
 		// Helper function to parse a line of CSV data

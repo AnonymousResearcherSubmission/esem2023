@@ -28,11 +28,10 @@
 		<thead>
 			<tr>
 				<th>Row</th>
-                <th>Authors</th>
-				<th>Title</th>
-				<th>Publication Year</th>
-				<th>URLs</th>
-                <th>Abstract</th>
+                <th>Publication source</th>
+                <th>Venue</th>
+				<th>Primary studies</th>
+                <th>Count</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -68,7 +67,7 @@
 				}
 			}
 		};
-		xhr.open('GET', './ACM.csv', true);
+		xhr.open('GET', 'Venue.csv', true);
 		xhr.send();
 
 		// Helper function to parse a line of CSV data
@@ -90,3 +89,6 @@
 	</script>
 </body>
 </html>
+
+
+

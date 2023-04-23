@@ -1,0 +1,56 @@
+﻿Restructuring programs by tucking statements into functions
+Automated method-extraction refactoring by using block-based slicing
+ARIES: Refactoring support environment based on code clone analysis
+ARIES: refactoring support tool for code clone
+Refactoring Support Based on Code Clone Analysis
+A metric-based approach to identifying refactoring opportunities for merging code clones in a java software system
+Star Diagram with Automated Refactorings for Eclipse
+A C++ Refactoring Browser and Method Extraction
+Breaking the barriers to successful refactoring: Observations and tools for Extract Method
+Fine slicing for advanced method extraction
+Identification of Extract Method refactoring opportunities
+Identification of Extract Method refactoring opportunities for the decomposition of methods
+Identifying fragments to be extracted from long methods
+Using software metrics to select refactoring for long method bad smell
+A visualization method of program dependency graph for identifying Extract Method opportunity
+Identifying extract-method refactoring candidates automatically
+An abstract interpretation framework for refactoring with application to extract methods with contracts
+Identifying Extract Method Opportunities Based on Variable References (S)
+"Increasing clone maintenance support by unifying clone detection and refactoring activities"
+Ruby refactoring plug-in for eclipse
+SPAPE: A semantic-preserving amorphous procedure extraction method for near-miss clones
+Identifying accurate refactoring opportunities using metrics
+Recommending automated Extract Method refactorings
+JExtract: An eclipse plug-in for recommending automated Extract Method refactorings
+A duplicated code refactoring advisor
+Identifying Extract Method refactoring opportunities based on functional relevance
+Deriving Extract Method refactoring suggestions for long methods
+Learning to rank extract method refactoring suggestions for long methods
+GEMS: An Extract Method refactoring recommender
+Finding extract method refactoring opportunities by analyzing development history
+Identification of extract method refactoring opportunities through analysis of variable declarations and uses
+A tool supporting postponable refactoring
+A log-linear probabilistic model for prioritizing extract method refactorings
+Refactoring opportunity identification methodology for removing long method smells and improving code analyzability
+An Investigation of the Relationship between Extract Method and Change Metrics: A Case Study of JEdit
+Automatic clone recommendation for refactoring based on the present and the past
+Proactive clone recommendation system for Extract Method refactoring
+TOAD: A tool for recommending auto-refactoring alternatives
+Improving the success rate of applying the Extract Method refactoring
+Feature requests-based recommendation of software refactorings
+Automated recommendation of software refactorings based on feature requests
+Enhancing source code refactoring detection with explanations from commit messages
+How does refactoring impact security when improving quality? a security-aware refactoring approach
+An automatic advisor for refactoring software clones based on machine learning
+The effectiveness of supervised machine learning algorithms in predicting software refactoring
+Data-driven Extract Method recommendations: A study at ING
+Comparing commit messages and source code metrics for the prediction refactoring activities
+On the documentation of refactoring types
+Mining commit messages to enhance software refactorings recommendation: A machine learning approach
+An automated Extract Method refactoring approach to correct the long method code smell
+Identifying Extract Method Refactorings
+LiveRef: a Tool for Live Refactoring Java Code
+A Live Environment to Improve the Refactoring Experience
+AntiCopyPaster: Extracting Code Duplicates As Soon As They Are Introduced in the IDE
+Just-in-time code duplicates extraction
+REMS: Recommending Extract Method Refactoring Opportunities via Multi-view Representation of Code Property Graph

@@ -29,10 +29,11 @@
 			<tr>
 				<th>Row</th>
                 <th>Authors</th>
-				<th>Title</th>
-				<th>Publication Year</th>
-				<th>URLs</th>
-                <th>Abstract</th>
+                <th>Author Full Names</th>
+				<th>Titles</th>
+				<th>Year</th>
+				<th>DOI</th>
+				<th>Link</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -68,7 +69,7 @@
 				}
 			}
 		};
-		xhr.open('GET', './ACM.csv', true);
+		xhr.open('GET', 'Scopus.csv', true);
 		xhr.send();
 
 		// Helper function to parse a line of CSV data
@@ -90,3 +91,6 @@
 	</script>
 </body>
 </html>
+
+
+
