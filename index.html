@@ -169,7 +169,7 @@
 
                <div id="details">
                <section class="s-12 l-6">
-                  <h3>Data Currently in CROP</h3>
+                  <h3>Data Currently </h3>
                   <p>
                      Data Collection: <a href="ScienceDirect.html" target="_blank">ScienceDirect</a>, <a href="Scopus.html" target="_blank">Scopus</a>, <a href="Springer.html" target="_blank">Springer Link</a>, <a href="WebOfScience.html" target="_blank">Web of Science</a>, <a href="ACM.html">ACM Digital Library</a>, and <a href="IEEE.html" target="_blank">IEEE Xplore</a>.
                   </p><br>
@@ -281,49 +281,6 @@
                         <td class="tg-dvpl">Couchbase</td>
                      </tr>
                   </table><br>
-                  <h3>Dataset Structure</h3>
-                  <p>
-                     The CROP dataset is organised in three main directories: <i>Metadata</i>, <i>Git Repos</i> and <i>Discussion</i>. Details for each directory
-                     as follows:
-                  </p><br>
-                  <h4>Metadata</h4>
-                  <p>
-                     For each software system in CROP, we provide a CSV file that contains the general metadata for each review and revision stored in CROP. The CSV will be
-                     primarily used to navigate through the data and access the code review discussion files and the versions of the code base regarding each revision in the
-                     git repository. Each row in the CSV corresponds to a single revision submitted for code review, where you will find the following information:
-                  </p><br>
-                  <p>
-                     <b>id:</b> an unique id to identify the revision within an specific community<br>
-                     <b>review_number:</b> the unique review number in which the revision is part of<br>
-                     <b>revision_number:</b> the number of the revision in the specific review<br>
-                     <b>author:</b> the author of the revision<br>
-                     <b>status:</b> the status of the revision<br>
-                     <b>change_id:</b> the change id of this revision<br>
-                     <b>before_commit_id:</b> the commit id that represents the version of the system before the revision took place<br>
-                     <b>after_commit_id:</b> the commit id that represents the version of the system after the revision took place<br>
-                  </p><br>
-                  <h4>Git Repos</h4>
-                  <p>
-                     CROP provides git repositories that recreate the projects’ reviewing history to include all the revisions submitted for code review. Each repository
-                     has a single master branch, where the before and after versions of the source code for each revision were committed sequentially, based on the review and 
-                     revision numbers. Such versions are accessible through the commit ids provided in the projects’ CSV file, as discussed above.
-                  </p><br>
-                  <h4>Discussion</h4>
-                  <p>
-                     This is the directory in which CROP stores the discussion files for each revision. The directory follows a tree structure, organised by review number, 
-                     in which the discussion files for each revision are contained in the directory of its respective review. 
-                  </p><br>
-                  <p>
-                     A discussion file presents the reviewing data in the following order: first, the description of the revision is presented, which denotes the commit message 
-                     of the revision. Such a message includes the revision’s change-id and author. The comments that were made during review by other developers are presented next. 
-                     In the discussion file, CROP includes the author of the comment and the respective message.
-                  </p><br>
-                  <i><h3>Disclaimer</h3></i>
-                  <p>
-                     CROP was first published and described in this <a href="https://mhepaixao.github.io/homepage/files/crop.pdf" target="_blank">research paper</a>. 
-                     Since its first publication, CROP has evolved and changed in its content and structure. Although the paper is the official guideline for the CROP dataset, this 
-                     website will always describe the most up to date version of the dataset.
-                  </p><br>
                </section>
                </div>
 
